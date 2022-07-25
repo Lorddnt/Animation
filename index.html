@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <style>
+        .boy {
+            background-image: url(nasa.jpg);
+            height: 900px;
+            width: 100%;
+            position: relative;
+            overflow-y: hidden;
+           animation-name: moon;
+           animation-duration: 20s;
+           animation-iteration-count: infinite;
+        }
+        .boy1, .boy2, .boy3{
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            height: 250px;
+            width: 750px;
+            color: white;
+            transform: translateY(300%);
+        }
+        
+        .boy1 {
+            animation-name: boy1;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .boy2 {
+            animation-name: boy2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .boy3 {
+            animation-name: boy3;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+      
+        button {
+            height: 40px;
+            width: 130px;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            font-weight: 30px;
+        }
+         
+        @keyframes moon {
+           
+            20% {
+                background-image: url(nasa.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            50% {
+                background-image: url(ramon.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            90% {
+                background-image: url(uriel.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+           
+        }
+        @keyframes boy1 {
+            5% {
+                transform: translateY(0%);
+            }
+            20% {
+                transform: translateY(0%);
+            }
+            30% {
+                transform: translateY(300%);
+            }
+            60% {
+                transform: translateY(300%);
+            }
+        }
+        @keyframes boy2 {
+            0% {
+                transform: translateY(300%);
+            }
+            25% {
+                transform: translateY(300%);
+            }
+            30% {
+                transform: translateY(0%);
+            }
+            50% {
+                transform: translateY(0%);
+            }
+        }
+        @keyframes boy3 {
+            0% {
+                transform: translateY(300%);
+            }
+            20% {
+                transform: translateY(300%);
+            }
+            30% {
+                transform: translateY(300%);
+            }
+            60% {
+                transform: translateY(300%);
+            }
+            70% {
+                transform: translateY(0%);
+            }
+            80% {
+                transform: translateY(0%);
+            }
+            90% {
+                transform: translateY(0%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boy">
+    <div class="boy1">
+        <p>Welcome To My Page</p>
+        <button>GET STARTED</button>
+        <div class="boy2">
+            <p>Only Those Who Apply The Principle of Web Design are True Designers.</p>
+            <button>GET STARTED</button>
+        </div>
+        <div class="boy3">
+            <p>A Trial Will Convince You</p>
+            <button>GET STARTED</button>
+        </div>
+            </div>
+        </div>
+</body>
+</html>
